@@ -1,4 +1,4 @@
-# Day 01+
+# Day 01
 
 ## Intro
 
@@ -28,5 +28,5 @@ After lunch we got started with GitHub, which was frustrating tricky. I had to f
 The last task for today was to draw a simple thing on paper and try to write the code for it afterwards. I decided to go with a boat.
 
 {% raw %}
-<iframe src="content/day01/02/index.html" width="100%" height="450" frameborder="no"></iframe>
+<iframe src="content\day01\02\index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
