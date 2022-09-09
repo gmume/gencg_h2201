@@ -12,7 +12,7 @@ Inspired by the idea of a landscape with growing trees and stars doing their cyc
 
 ## Space flight
 
-I had a snipped lying around that was already doing something similar just with stars, but not timed. I managed to implement a comet for, but couldn't bring it to fly in a minute to the edge of the canvas and to reappear. In the evening I gave up to priorize another idea.
+I had a snippet lying around that was already doing something similar just with stars, but not timed. I managed to implement a comet, but couldn't bring it to fly in a minute to the edge of the canvas and to reappear properly. In the evening I gave up to priorize another idea.
 
 {% raw %}
 <iframe src="content\day03\space_v2_comet\index.html" width="100%" height="450" frameborder="no"></iframe>
@@ -20,7 +20,7 @@ I had a snipped lying around that was already doing something similar just with 
 
 ## Grid again
 
-In order to have a working clock by the end of the week I adapted my grid with boxes from the day before again. To visualize the seconds the boxes turn transparent on after another. When there are 60 transparent boxes the hole thing resets and starts again. That was what I was able to achive so far and I would continue to work on it on an other day.
+In order to have a working clock by the end of the week I adapted my grid with boxes from the day before again. To visualize the seconds the boxes turn transparent one after another. When there are 60 transparent boxes the hole thing should reset and start again. That was what I was able to achive so far and I would continue to work on it on an other day.
 
 {% raw %}
 <iframe src="content\day03\time_v1\index.html" width="100%" height="450" frameborder="no"></iframe>

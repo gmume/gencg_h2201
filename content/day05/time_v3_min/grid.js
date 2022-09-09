@@ -1,9 +1,9 @@
-const canvasWidth = 1500;
-const canvasHight = 700;
+const canvasWidth = 700;
+const canvasHight = 400;
 const cols = 10;
 const rows = 6;
 let grid;
-const resolution = 80;
+const resolution = 40;
 let flagSec;
 let flagMin;
 let time;

@@ -2,7 +2,7 @@
 
 ## Drawing machines
 
-"Create a program that expands, augment, distort, questions, complicate, interpret, improves the act of drawing." was the task to do on day 4. How could I interprete this? I always found the kind of drawing machins or tools that were alike spyrographs fascinating. In my researches I stumbled upon something called benic equation. It was like everyone uses this to create beautifull spyrograph designs, but I wasn't able to find any more information about it. However I was hooked.
+"Create a program that expands, augment, distort, questions, complicate, interpret, improves the act of drawing." was the task to do on day 4. How could I interprete this? I always found the kind of drawing machins or tools that were alike spyrographs fascinating. In my researches I stumbled upon something called benice equation. It was like everyone uses this to create beautifull spyrograph designs, but I wasn't able to find any more information about it. However I was hooked.
 
 ## Spyrograph
 Based on an idea from Daniel Shiffman I started to create code. Soon I was able to animate circles that rotate around each other.
