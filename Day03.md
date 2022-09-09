@@ -1,35 +1,27 @@
-# Day 02
+# Day 03
 
-## Grids & Iterative Patterns
+## Clock
 
-On day two of our course we had to design some kind of tiling pattern or textural composition. I had already once made a grid in a cube for another project in 3D. I really liked that one and I thought it would be fun to adapt the idea for this task. It should be something like cubes in a grid, that rotate in some way.
+Today we worked on building a device visualising the passing of time. It should be somewhat abstract without digits and should show a kind of cycle. So I did some brainstorming with some weird ideas like a Dalí pizza.
 
-![Example Image](content/day02/01/grid.jpg)
+![Example Image](content/day03/01/pizza.png)
 
-## Grid with boxes
+![Example Image](content/day03/01/landscape.png)
 
-First I strugled quite a while with the problem how to position the grid in the room and the right camera postition.
+Inspired by the idea of a landscape with growing trees and stars doing their cycle in the sky, I decided to do a space flight. While flying there should be stars that are passed in a second, comets that are passed in a minute and planets that are passed in an hour. Easier said than done.
+
+## Space flight
+
+I had a snipped lying around that was already doing something similar just with stars, but not timed. I managed to implement a comet for, but couldn't bring it to fly in a minute to the edge of the canvas and to reappear. In the evening I gave up to priorize another idea.
 
 {% raw %}
-<iframe src="content\day02\grid_v1\index.html" width="100%" height="450" frameborder="no"></iframe>
+<iframe src="content\day03\space_v2_comet\index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
 
-After solving that problem I made the boxes transparent, gave them a color and let them rotate. Additionally I put a sphere in each box.
+## Grid again
+
+In order to have a working clock by the end of the week I adapted my grid with boxes from the day before again. To visualize the seconds the boxes turn transparent on after another. When there are 60 transparent boxes the hole thing resets and starts again. That was what I was able to achive so far and I would continue to work on it on an other day.
 
 {% raw %}
-<iframe src="content\day02\grid_v2_spheres\index.html" width="100%" height="450" frameborder="no"></iframe>
-{% endraw %}
-
-After playing around for some time I had the idea, that it would be fun, if the spheres would be eyes. Some researching helped me to create a texture for an iris. For the white eyeball I just stuck a second sphere into the first. To bring the eyes to life I let them rotate as if they were looking around.
-
-![Example Image](content/day02/grid_v3_eyes/eyeball.png)
-
-{% raw %}
-<iframe src="content\day02\grid_v3_eyes\index.html" width="100%" height="450" frameborder="no"></iframe>
-{% endraw %}
-
-While discussing the result with some friends, one of them suggested, that it would be cool if every eye looked in an other direction. Some more coding led to the result of every eye disturbingly looking around in its box and ,to top it off, having some kind of nervous twitching. Im really happy with what I achived. :D
-
-{% raw %}
-<iframe src="content\day02\grid_v4_twitching\index.html" width="100%" height="450" frameborder="no"></iframe>
+<iframe src="content\day03\time_v1\index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
