@@ -28,3 +28,9 @@ And after adding more lines from other circles it became really beautifull.
 {% raw %}
 <iframe src="content\day04\drawing_v6\index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
+
+![Example Image](content/day04/01/Screenshot1.png)
+
+![Example Image](content/day04/01/Screenshot2.png)
+
+![Example Image](content/day04/01/Screenshot3.png)
