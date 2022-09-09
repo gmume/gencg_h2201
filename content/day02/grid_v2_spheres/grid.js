@@ -7,8 +7,8 @@ let depths;
 let resolution;
 
 function setup() {
-  canvasWidth = 1500;
-  canvasHight = 700;
+  canvasWidth = 700;
+  canvasHight = 400;
   
   createCanvas(canvasWidth, canvasHight, WEBGL);
   frameRate(12);
