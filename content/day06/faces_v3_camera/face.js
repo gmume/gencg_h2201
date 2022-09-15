@@ -1,5 +1,5 @@
 let cam;
-let resolution = 6;
+let resolution = 4;
 let pixelIndex;
 let r;
 let g;
@@ -7,7 +7,7 @@ let b;
 let avg;
 
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight);
+  createCanvas(windowWidth, windowHeight);
   frameRate(20);
   cam = createCapture(VIDEO);
   cam.hide();
@@ -25,7 +25,7 @@ function draw() {
       g = cam.pixels[pixelIndex + 1];
       b = cam.pixels[pixelIndex + 2];
       avg = (r + g + b) / 3;
-      circle(i * resolution + 30, j * resolution + 30, avg / 4);
+      circle(i * resolution + resolution / 2, j * resolution + resolution / 2, map(avg, 0, 255, 0, resolution));
     }
   }
 }
