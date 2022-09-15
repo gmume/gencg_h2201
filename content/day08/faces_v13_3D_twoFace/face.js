@@ -2,7 +2,7 @@ let imgFront;
 let imgBack;
 let offsetX;
 let offsetY;
-const resolution = 5;
+const resolution = 2;
 const size = resolution * 15;
 const diameter = 25;
 let bright;
@@ -26,7 +26,7 @@ function preload() {
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight, WEBGL);
   camera = createCamera();
-  frameRate(5);
+  frameRate(6);
   noStroke();
   alphaFront = 255;
   alphaBack = 0;
@@ -78,7 +78,7 @@ function drawBack() {
       if(bright > 10) {
         push();
         translate(((i - offsetX) * size), ((j - offsetY) * size), - (bright * (size / 3)));
-        fill(map(bright, 10, 100, 0, 255), alphaBack);
+        fill(map(bright, 10, 100, 0, 255), calcAlphaBack());
         sphere(diameter, 4, 4);
         pop();
       }
@@ -99,6 +99,22 @@ function calcAlphaFront() {
       alphaFrontUp = true;
     }
     return alphaFront;
+  }
+}
+
+function calcAlphaBack() {
+  if(alphaBackUp == true) {
+    alphaBack = alphaBack + alphaOffset;
+    if(alphaBack >= 255) {
+      alphaBackUp = false;
+    }
+    return alphaBack;
+  } else {
+    alphaBack = alphaBack - alphaOffset;
+    if(alphaBack <= 0) {
+      alphaBackUp = true;
+    }
+    return alphaBack;
   }
 }
 

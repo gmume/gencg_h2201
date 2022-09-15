@@ -13,14 +13,10 @@ For a better result I had, after getting the brightness, to put the colorMode ba
 ![Example Image](content/day08/01/RGB.png)
 [Full screen](content/day08/faces_v10_3D_brightness)
 
+Now I came up the idea to do something like a twoFace where two portraits are put back to back. The camera is rotating around.
 
+[![IMAGE ALT TEXT HERE](content/day08/01/twoFace1.png)](https://youtu.be/vdgz2TE5-zI)
 
-{% raw %}
-<iframe src="content\day08\faces_v12_3D_twoFace\index.html" width="100%" height="450" frameborder="no"></iframe>
-{% endraw %}
-[Full screen](content/day08/faces_v12_3D_twoFace)
+To finish this up I tryed to let the portait that turns to the back fade away and the other to fade in. I managed to implement some kind of transparent cycle, but the timing is still off.
 
-{% raw %}
-<iframe src="content\day08\faces_v13_3D_twoFace\index.html" width="100%" height="450" frameborder="no"></iframe>
-{% endraw %}
-[Full screen](content/day08/aces_v13_3D_twoFace)
+[![IMAGE ALT TEXT HERE](content/day08/01/twoFace2.png)](https://youtu.be/XU1S4XsQmr8)
