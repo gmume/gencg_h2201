@@ -16,7 +16,7 @@ function preload() {
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
-  img.resize(50, 0);
+  img.resize(0, height);
   w = img.width * 1.5;
   h = img.height;
   img.loadPixels();
