@@ -12,9 +12,8 @@ The task for today was: "Create a program that is generating a parametric face. 
 <iframe src="content\day06\faces_v2_circles\index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
 
-{% raw %}
-<iframe src="content\day06\faces_v3_camera\index.html" width="100%" height="450" frameborder="no"></iframe>
-{% endraw %}
+![Example Image](content/day06/01/img.png)
+[I'm a relative reference to a repository file](content/day06/01/faces_v3_camera)
 
 {% raw %}
 <iframe src="content\day06\faces_v4_3D\index.html" width="100%" height="450" frameborder="no"></iframe>
