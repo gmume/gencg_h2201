@@ -36,7 +36,7 @@ function draw() {
       avg = (r + g + b) / 25;
 
       push();
-      translate((i * w + w * 0.5) - offset, (j * h + h * 0.5) - offset *2, - width);
+      translate((i * w + w * 0.5) - offset, (j * h + h * 0.5) - offset *2, - width * 2);
       sphere(avg);
       pop();
     }
