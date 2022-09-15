@@ -1,4 +1,3 @@
-const canvasSide = 1000;
 let pathParent1;
 let pathParent2;
 let pathEnd;
@@ -8,14 +7,13 @@ const edges = 7; //
 const resolution = 30; //10
 
 function setup() {
-  createCanvas(canvasSide, canvasSide);
+  createCanvas(window.innerWidth, window.innerHeight);
   colorMode(HSB, 100);
   pathParent1 = [];
   pathParent2 = [];
   pathEnd = [];
-  sun = new Orbit(canvasSide/2, canvasSide/2, 150, 0);
+  sun = new Orbit(width / 2, height / 2, height / 6, 0);
   let next = sun;
-
   for (let i = 0; i < 6; i++) {
     next = next.addChild();
   }
@@ -24,7 +22,6 @@ function setup() {
 
 function draw() {
   background(0);
-  
   for (let i = 0; i < resolution; i++) {
     let next = sun;
     while (next != null) {

@@ -7,7 +7,7 @@ function setup() {
   colorMode(HSB, 100);
 
   path = [];
-  sun = new Orbit(width / 2, height / 2, height / 10);
+  sun = new Orbit(width / 2, height / 2, height / 6);
   let next = sun;
   for (let i = 0; i < 3; i++) {
     next = next.addChild();

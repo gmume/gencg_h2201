@@ -1,9 +1,7 @@
-const canvasWidth = 700;
-const canvasHight = 400;
 const cols = 10;
 const rows = 6;
 let grid;
-const resolution = 40;
+const resolution = 160;
 let flagSec;
 let flagMin;
 let time;
@@ -13,7 +11,7 @@ let minCounter;
 // let resetMin;
 
 function setup() {
-  createCanvas(canvasWidth, canvasHight, WEBGL);
+  createCanvas(window.innerWidth, window.innerHeight, WEBGL);
   frameRate(12);
   angleMode(DEGREES);
   strokeWeight(0);

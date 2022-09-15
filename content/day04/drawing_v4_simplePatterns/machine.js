@@ -3,13 +3,9 @@ let sun;
 let end;
 
 function setup() {
-  canvasWidth = 600;
-  canvasHight = 600;
-  createCanvas(canvasWidth, canvasHight);
-  // colorMode(HSB, 100);
-
+  createCanvas(window.innerWidth, window.innerHeight);
   path = [];
-  sun = new Orbit(300, 300, 150, 0.01);
+  sun = new Orbit(width / 2, height / 2, height / 6, 0.01);
   let next = sun;
   for (let i = 0; i < 3; i++) {
     next = next.addChild();
@@ -19,25 +15,14 @@ function setup() {
 
 function draw() {
   background(0);
-
   let next = sun;
   while (next != null) {
-
-    
     next.update();
-
-
     next.show();
     next = next.child;
   }
 
-  // let r1 = 100;
-  // let x1 = 300;
-  // let y1 = 300;
-  // circle(x1,y1,r1*2);
-
   path.push(createVector(end.x, end.y));
-
   beginShape();
   stroke(255,0,20);
   strokeWeight(1)
