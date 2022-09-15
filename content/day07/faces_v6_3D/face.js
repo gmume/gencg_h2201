@@ -18,7 +18,7 @@ function setup() {
   noStroke();
   fill(255);
   offset = window.innerWidth/4;
-  camera(0, 0, offset * 8);
+  camera(0, 0, width);
 }
 
 function draw() {
