@@ -23,5 +23,5 @@ I had a snippet lying around that was already doing something similar just with 
 In order to have a working clock by the end of the week I adapted my grid with boxes from the day before again. To visualize the seconds the boxes turn transparent one after another. When there are 60 transparent boxes the hole thing should reset and start again. That was what I was able to achive so far and I would continue to work on it on an other day.
 
 {% raw %}
-<iframe src="content\day03\time_v1_min\index.html" width="100%" height="450" frameborder="no"></iframe>
+<iframe src="content\day03\time_v3_min\index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}

@@ -9,11 +9,6 @@ On day two of our course we had to design some kind of tiling pattern or textura
 ## Grid with boxes
 
 First I strugled quite a while with the problem how to position the grid in the room and the right camera postition.
-
-{% raw %}
-<iframe src="content\day02\grid_v1\index.html" width="100%" height="450" frameborder="no"></iframe>
-{% endraw %}
-
 After solving that problem I made the boxes transparent, gave them a color and let them rotate. Additionally I put a sphere in each box.
 
 {% raw %}
