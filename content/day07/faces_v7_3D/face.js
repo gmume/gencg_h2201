@@ -16,7 +16,7 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight, WEBGL);
   noStroke();
   strokeWeight(1);
-  camera(0, 0, width);
+  camera(0, 0, width * 2);
 }
 
 function draw() {
