@@ -30,7 +30,7 @@ function draw() {
       g = img.pixels[pixelIndex + 1];
       b = img.pixels[pixelIndex + 2];
       avg = (r + g + b) / 20;
-      circle(i * resolution + resolution / 2, j * resolution + resolution / 2, avg);
+      circle(i * resolution + resolution / 2, j * resolution + resolution / 2, map(avg, 0, 255, 0, resolution));
     }
   }
 }
