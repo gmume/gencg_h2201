@@ -1,5 +1,5 @@
 let cam;
-let resolution = 4;
+let resolution = 6;
 let pixelIndex;
 let r;
 let g;
@@ -25,7 +25,7 @@ function draw() {
       g = cam.pixels[pixelIndex + 1];
       b = cam.pixels[pixelIndex + 2];
       avg = (r + g + b) / 3;
-      circle(i * resolution + 30, j * resolution + 30, avg / 15);
+      circle(i * resolution + 30, j * resolution + 30, avg / 4);
     }
   }
 }
