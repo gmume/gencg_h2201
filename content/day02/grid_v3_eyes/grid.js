@@ -1,5 +1,3 @@
-let canvasWidth;
-let canvasHight;
 let grid;
 let cols;
 let rows;
@@ -13,16 +11,13 @@ function preload() {
 }
 
 function setup() {
-  canvasWidth = 700;
-  canvasHight = 400;
-  
-  createCanvas(canvasWidth, canvasHight, WEBGL);
+  createCanvas(window.innerWidth, window.innerHeight, WEBGL);
   frameRate(12);
   strokeWeight(0);
   colorMode(HSB, 100);
-  resolution = 60; //Auflösung
-  cols = floor((canvasWidth - (2 * resolution)) / resolution);
-  rows = floor((canvasHight - (2 * resolution)) / resolution);
+  resolution = width / 14; //Auflösung
+  cols = floor((width - (2 * resolution)) / resolution);
+  rows = floor((height - (2 * resolution)) / resolution);
   grid = make2DArray(cols, rows);
 }
 

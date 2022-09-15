@@ -21,8 +21,8 @@ const sail = [
 ]
 
 function setup() {
-  createCanvas(500, 500, WEBGL);
-  background(200);
+  createCanvas(window.innerWidth, window.innerHeight, WEBGL);
+  background(255);
 }
 
 function draw() {
