@@ -16,14 +16,17 @@ function preload() {
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
-  img.resize(0, height);
+  noLoop();
+  background(0);
+  noStroke();
+  fill(255);
+  img.resize(40, 0);
   w = img.width * 1.5;
   h = img.height;
   img.loadPixels();
 }
 
 function draw() {
-  background(0);
   for (let i = 0; i < img.width; i++) {
     for (let j = 0; j < img.height; j++) {
       pixelIndex = (i + j * img.width) * 4;
@@ -31,9 +34,7 @@ function draw() {
       g = img.pixels[pixelIndex + 1];
       b = img.pixels[pixelIndex + 2];
       avg = (r + g + b) / 3;
-
-      noStroke();
-      fill(255);
+      
       charIndex = floor(map(avg, 0, 255, len, 0));
       textSize(w);
       textAlign(CENTER, CENTER);

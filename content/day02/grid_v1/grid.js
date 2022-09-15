@@ -1,5 +1,3 @@
-// let canvasWidth;
-// let canvasHight;
 let grid;
 let cols;
 let rows;
@@ -7,13 +5,12 @@ let depths;
 let resolution;
 
 function setup() {
-  // canvasWidth = 1500;
-  // canvasHight = 700;
   createCanvas(window.innerWidth, window.innerHeight, WEBGL);
   frameRate(3);
-  camera(-height*1.1, -height/1.1, width/0.6); //Nähe, Höhe, Seite
+  // camera(-height*1.1, -height/1.1, width/0.6); //Nähe, Höhe, Seite
+  camera(0, height/4, width); //Nähe, Höhe, Seite
   strokeWeight(0);
-  resolution = 180; //Auflösung
+  resolution = 180;
   cols = floor((width - (2 * resolution)) / resolution);
   rows = floor((height - (2 * resolution)) / resolution);
   grid = make2DArray(cols, rows);
@@ -38,7 +35,6 @@ function draw() {
 
 function make2DArray(cols, rows) {
   let arr = new Array(cols);
-
   for (let i = 0; i < arr.length; i++) {
     arr[i] = new Array(rows);
   }

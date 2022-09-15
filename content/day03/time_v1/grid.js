@@ -1,5 +1,3 @@
-let canvasWidth;
-let canvasHight;
 let grid;
 let cols;
 let rows;
@@ -14,15 +12,12 @@ let min;
 let hour;
 
 function setup() {
-  canvasWidth = 1500;
-  canvasHight = 700;
-  
-  createCanvas(canvasWidth, canvasHight, WEBGL);
+  createCanvas(window.innerWidth, window.innerHeight, WEBGL);
   frameRate(15);
   angleMode(DEGREES);
   strokeWeight(0);
   colorMode(HSB, 100);
-  resolution = 80; //Auflösung
+  resolution = 80;
   cols = 10;
   rows = 6;
   flag = "start";
@@ -57,14 +52,12 @@ function draw() {
       switch (grid[i][j]) {
         case "second":
           fill(20, 100, 100, 5);
-          //cylinder(resolution /1.5, resolution);
           box(resolution/1.3);
           break;
 
         case "rotate":
           fill(20, 100, 100, 5);
           rotatX(degreeDiv);
-          //cylinder(resolution /1.5, resolution);
           box(resolution/1.3);
           degree += degreeDiv;
           break;

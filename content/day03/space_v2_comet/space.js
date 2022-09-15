@@ -11,7 +11,7 @@ let planet;
 let planetSpeed;
 
 function setup() {
-  createCanvas(1000, 800);
+  createCanvas(window.innerWidth, window.innerHeight);
   background(0);
 
   stars = Array.from({ length: 200 }, () => ({ star: new Star() }));

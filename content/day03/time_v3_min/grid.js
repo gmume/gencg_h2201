@@ -1,5 +1,3 @@
-const canvasWidth = 1500;
-const canvasHight = 700;
 const cols = 10;
 const rows = 6;
 let grid;
@@ -9,11 +7,11 @@ let flagMin;
 let time;
 let secCounter;
 let resetSec;
-let minCounter;
+// let minCounter;
 // let resetMin;
 
 function setup() {
-  createCanvas(canvasWidth, canvasHight, WEBGL);
+  createCanvas(window.innerWidth, window.innerHeight, WEBGL);
   frameRate(12);
   angleMode(DEGREES);
   strokeWeight(0);
@@ -25,7 +23,7 @@ function setup() {
   time = Date.now();
   secCounter = 0;
   resetSec = 60;
-  minCounter = 0;
+  // minCounter = 0;
   // resetMin = 60;
 }
 
@@ -48,7 +46,7 @@ function draw() {
           if (grid[i][j][1] == "green") {
             fill(20, 100, 100, 5);
           } else {
-            fill(0, 100, 100, 5);
+            // fill(0, 100, 100, 5);
           }
           box(resolution / 1.3);
           break;
@@ -57,7 +55,7 @@ function draw() {
           if (grid[i][j][1] == "green") {
             fill(20, 100, 75, 100);
           } else {
-            fill(0, 100, 100, 100);
+            // fill(0, 100, 100, 100);
           }
 
           box(resolution / 1.3);
@@ -89,8 +87,8 @@ function setSeconds(i, j) {
 
         while (minSet == false) {
           if (grid[i][j][1] == "green") {
-            grid[i][j][1] = "red";
-            minSet = true;
+            // grid[i][j][1] = "red";
+            // minSet = true;
           } else if (j < rows.length) {
             j += 1;
           } else {
@@ -101,7 +99,7 @@ function setSeconds(i, j) {
 
       secCounter = 0;
       resetSec = 60;
-      minCounter += 1;
+      // minCounter += 1;
     }
   }
 }
