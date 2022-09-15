@@ -17,4 +17,4 @@ The task for today was: "Create a program that is generating a parametric face. 
 {% raw %}
 <iframe src="content\day06\faces_v5_3D\index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
-[I'm a relative reference to a repository file](content/day06/faces_v5_3D)
+[Full screen](content/day06/faces_v5_3D)

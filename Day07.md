@@ -7,15 +7,19 @@ The last new task for this course was all about pixels. Because I already used t
 {% raw %}
 <iframe src="content\day07\faces_v6_3D\index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
+[Full screen](content/day07/faces_v6_3D)
 
 {% raw %}
 <iframe src="content\day07\faces_v7_3D\index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
+[Full screen](content/day07/faces_v7_3D)
 
 {% raw %}
 <iframe src="content\day07\faces_v8_3D_shades\index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
+[Full screen](content/day07/faces_v8_3D_shades)
 
 {% raw %}
 <iframe src="content\day07\faces_v9_3D_color\index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
+[Full screen](content/day07/faces_v9_3D_color)
