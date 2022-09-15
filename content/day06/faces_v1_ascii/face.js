@@ -1,9 +1,8 @@
 const density = "Ñ@#W$9876543210?!abc;:+=-,._ ";
 const len = density.length;
+let resolution;
 let charIndex;
 let img;
-let w;
-let h;
 let pixelIndex;
 let r;
 let g;
@@ -21,8 +20,7 @@ function setup() {
   noStroke();
   fill(255);
   img.resize(40, 0);
-  w = img.width * 1.5;
-  h = img.height;
+  resolution = height / img.height;
   img.loadPixels();
 }
 
@@ -36,9 +34,9 @@ function draw() {
       avg = (r + g + b) / 3;
       
       charIndex = floor(map(avg, 0, 255, len, 0));
-      textSize(w);
+      textSize(resolution);
       textAlign(CENTER, CENTER);
-      text(density.charAt(charIndex), i * w + w * 0.5, j * h + h * 0.5);
+      text(density.charAt(charIndex), i * resolution + resolution / 2, j * resolution + resolution / 2);
     }
   }
 }
