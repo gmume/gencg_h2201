@@ -10,6 +10,8 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   frameRate(20);
   cam = createCapture(VIDEO);
+  console.log(cam.height);
+  cam.size(600, 450);
   cam.hide();
   noStroke();
   fill(255);
