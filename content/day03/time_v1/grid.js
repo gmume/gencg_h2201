@@ -17,7 +17,7 @@ function setup() {
   angleMode(DEGREES);
   strokeWeight(0);
   colorMode(HSB, 100);
-  resolution = 80;
+  resolution = width / 12;
   cols = 10;
   rows = 6;
   flag = "start";

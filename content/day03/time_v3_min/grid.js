@@ -1,7 +1,7 @@
 const cols = 10;
 const rows = 6;
 let grid;
-const resolution = 80;
+let resolution;
 let flagSec;
 let flagMin;
 let time;
@@ -16,7 +16,7 @@ function setup() {
   angleMode(DEGREES);
   strokeWeight(0);
   colorMode(HSB, 100);
-
+  resolution = width / 12;
   flagSec = "opaque";
   flagMin = "green";
   grid = make2DArray(cols, rows);

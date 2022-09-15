@@ -22,13 +22,13 @@ function draw() {
   orbitControl();
   for (let i = 0; i < cols; i++) {
     for (let j = 0; j < rows; j++) {
-      let x = i * resolution;
-      let y = j * resolution;
+      let x = (i-(cols/2)) * resolution;
+      let y = (j-(rows/2)) * resolution;
       stroke(200);
       strokeWeight(1);
-      translate(x-(width), y-(height));
+      translate(x-(width / 2), y-(height / 2));
       box(resolution);
-      translate(-x+(width), -y+(height));
+      translate(-x+(width / 2), -y+(height / 2));
     }
   }
 }
