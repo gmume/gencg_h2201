@@ -17,7 +17,12 @@ function setup() {
   colorMode(HSB, 100);
   resolution = width / 14;
   cols = floor((width - (2 * resolution)) / resolution);
+
+if(floor((height - (2 * resolution)) / resolution) <= 7) {
   rows = floor((height - (2 * resolution)) / resolution);
+} else {
+  rows = 8;
+}
   grid = make2DArray(cols, rows);
 }
 
@@ -60,7 +65,6 @@ function draw() {
 
 function randomRotate() {
   let choice = random([0, 1]);
-  console.log(choice);
   if(choice == 0) {
     rotateY(millis()/700);
     rotateX(millis()/700);
