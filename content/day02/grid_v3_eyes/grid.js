@@ -15,9 +15,13 @@ function setup() {
   frameRate(12);
   strokeWeight(0);
   colorMode(HSB, 100);
-  resolution = width / 14; //Auflösung
+  resolution = width / 14;
   cols = floor((width - (2 * resolution)) / resolution);
-  rows = floor((height - (2 * resolution)) / resolution);
+  if(floor((height - (2 * resolution)) / resolution) <= 7) {
+    rows = floor((height - (2 * resolution)) / resolution);
+  } else {
+    rows = 8;
+  }
   grid = make2DArray(cols, rows);
 }
 
