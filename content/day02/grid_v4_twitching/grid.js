@@ -18,10 +18,10 @@ function setup() {
   resolution = width / 14;
   cols = floor((width - (2 * resolution)) / resolution);
 
-if(floor((height - (2 * resolution)) / resolution) <= 7) {
+if(floor((height - (2 * resolution)) / resolution) <= 6) {
   rows = floor((height - (2 * resolution)) / resolution);
 } else {
-  rows = 8;
+  rows = 7;
 }
   grid = make2DArray(cols, rows);
 }
